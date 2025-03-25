@@ -12,8 +12,7 @@ namespace Event_Plus.Domains
         public Guid TipoEventoId { get; set; }
 
         [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "O nome do tipo evento eh obrigatorio!")]
-
+        [Required(ErrorMessage = "Nome do evento obrigatório!")]
         public string? TituloTipoEvento { get; set; }
 
     }

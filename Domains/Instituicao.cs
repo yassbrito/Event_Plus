@@ -24,8 +24,8 @@ namespace Event_Plus.Domains
         public string? Endereco { get; set; }
 
 
-        [Column(TypeName = "VARCHAR(50)")]
-        [Required(ErrorMessage = "O nome é obrigatório")]
+        [Column(TypeName = "VARCHAR(100)")]
+        [Required(ErrorMessage = "O nome fantasia é obrigatório")]
         public string? NomeFantasia { get; set; }
     }
 }

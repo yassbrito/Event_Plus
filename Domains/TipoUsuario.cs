@@ -9,7 +9,7 @@ namespace Event_Plus.Domains
         [Key]
         public Guid TipoUsuarioId { get; set; }
 
-        [Column(TypeName = "VARCHAR(20)")]
+        [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O tipo Usuario eh obrigatorio!")]
         public string? TituloTipoUsuario { get; set; }
     }

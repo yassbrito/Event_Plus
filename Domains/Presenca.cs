@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Event_Plus.Domains
 {
     [Table("Presenca")]
-    [Index(nameof(Situacao), IsUnique = true)]
+
     public class Presenca
     {
         [Key]

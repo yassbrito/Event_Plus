@@ -9,20 +9,25 @@ namespace Event_Plus.Domains
         [Key]
         public Guid ComentarioEventoId { get; set; }
 
-        [Column(TypeName = "Text")]
-        [Required(ErrorMessage = "a descricao eh obrigatoria!")]
-        public string? Comentarios { get; set; }
+        [Column(TypeName = "VARCHAR(200)")]
+        [Required(ErrorMessage = "a descricao do comentario eh obrigatoria!")]
+        public string? Descricao { get; set; }
 
         [Column(TypeName = "BIT")]
-        [Required(ErrorMessage = "a resposta eh obrigatorio!")]
+        [Required]
         public bool? Exibe { get; set; }
 
-        public Guid Evento { get; set; }
-        [ForeignKey("EventoId")]
-        public Evento? Eventos { get; set; }
+        [Required(ErrorMessage = "Usuário obrigatório!")]
+        public Guid IdUsuario { get; set; }
 
-        public Guid Usuario { get; set; }
-        [ForeignKey("UsuarioID")]
-        public Usuario? Usuarios { get; set; }
+        [ForeignKey("IdUsuario")]
+        public Usuario? Usuario { get; set; }
+
+        //ref.tabela Evento
+        [Required(ErrorMessage = "Evento obrigatório!")]
+        public Guid IdEvento { get; set; }
+
+        [ForeignKey("IdEvento")]
+        public Evento? Evento { get; set; }
     }
 }

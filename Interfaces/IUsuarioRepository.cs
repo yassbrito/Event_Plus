@@ -4,7 +4,7 @@ namespace Event_Plus.Interfaces
 {
     public interface IUsuarioRepository
     {
-        void Cadastrar(Usuario novoUsuario);
+        void Cadastrar(Usuario usuario);
 
         Usuario BuscarPorId(Guid id);
 

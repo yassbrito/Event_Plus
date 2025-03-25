@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48665566848\\Desktop\\Nova pasta\\Event_Plus.csproj": {}
+    "C:\\Users\\48665566848\\Desktop\\Event_Plus\\Event_Plus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48665566848\\Desktop\\Nova pasta\\Event_Plus.csproj": {
+    "C:\\Users\\48665566848\\Desktop\\Event_Plus\\Event_Plus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48665566848\\Desktop\\Nova pasta\\Event_Plus.csproj",
+        "projectUniqueName": "C:\\Users\\48665566848\\Desktop\\Event_Plus\\Event_Plus.csproj",
         "projectName": "Event_Plus",
-        "projectPath": "C:\\Users\\48665566848\\Desktop\\Nova pasta\\Event_Plus.csproj",
+        "projectPath": "C:\\Users\\48665566848\\Desktop\\Event_Plus\\Event_Plus.csproj",
         "packagesPath": "C:\\Users\\48665566848\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48665566848\\Desktop\\Nova pasta\\obj\\",
+        "outputPath": "C:\\Users\\48665566848\\Desktop\\Event_Plus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

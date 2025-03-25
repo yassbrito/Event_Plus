@@ -11,23 +11,25 @@ namespace Event_Plus.Domains
         [Key]
         public Guid UsuarioId { get; set; }
 
-        [Column(TypeName = "VARCHAR(50)")]
+        [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O nome do usuario é obrigatório")]
-        public string? Nome { get; set; }
+        public string? NomeUsuario { get; set; }
 
 
-        [Column(TypeName = "VARCHAR(120)")]
+        [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O email é obrigatório")]
         public string? Email { get; set; }
 
 
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "A senha é obrigatório")]
+        [Required(ErrorMessage = "A senha  do usuario é obrigatório")]
         [StringLength(60, MinimumLength = 5, ErrorMessage = "A senha deve ter entre 5 e 30 caracteres.")]
         public string? Senha { get; set; }
 
         //FK
+        [Required(ErrorMessage = "O tipo do usuário é obrigatório!")]
         public Guid TipoUsuarioId { get; set; }
+
         [ForeignKey("TipoUsuarioId")]
         public TipoUsuario? TipoUsuario { get; set; }
     }

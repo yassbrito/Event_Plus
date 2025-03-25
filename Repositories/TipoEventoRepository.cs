@@ -56,7 +56,7 @@ namespace Event_Plus.Repositories
             throw new NotImplementedException();
         }
 
-        
+
 
         public List<TipoEvento> Cadastrar()
         {
@@ -70,7 +70,12 @@ namespace Event_Plus.Repositories
             {
                 throw;
             }
-            
+        }
+
+        public void Cadastrar(TipoEvento tipoEvento)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Deletar(Guid Id)
         {
